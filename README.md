@@ -48,6 +48,7 @@ Save this as `lua/plugins/gitlab.lua` in your Neovim config:
 return {
   {
     "bassepeder/snacks-gitlab.nvim",
+    version = "*", -- latest release; remove to follow the main branch
     dependencies = { "folke/snacks.nvim" },
     cmd = "GitLab",
     keys = {
