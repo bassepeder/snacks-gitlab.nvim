@@ -4,6 +4,8 @@ Browse, review and merge GitLab merge requests and issues from Neovim, using [Sn
 
 It works like Snacks' built-in GitHub (`gh`) integration, but for GitLab, both gitlab.com and self-hosted instances. Every request goes through the [`glab`](https://gitlab.com/gitlab-org/cli) CLI using your existing `glab` login. There are no tokens to configure.
 
+![Merge request picker with pipeline status, labels and a preview of the selected merge request](screenshots/picker.png)
+
 ## Features
 
 - **Merge request and issue pickers** with server-side search, a markdown preview, pipeline status, coloured labels and update time.
@@ -29,6 +31,20 @@ It works like Snacks' built-in GitHub (`gh`) integration, but for GitLab, both g
 | Mark as draft / ready | ✓ | |
 
 Comments open in a small markdown window: write your text, then press `<c-s>` (Ctrl+S) to send it, or `q` (in normal mode) to cancel.
+
+## Screenshots
+
+The diff view, with a review thread under the line it was left on:
+
+![Merge request diff with an unresolved review thread shown inline](screenshots/diff.png)
+
+A merge request buffer, with the comments grouped into threads:
+
+![Merge request buffer showing the activity as threads](screenshots/buffer.png)
+
+The actions menu:
+
+![Actions menu for a merge request, opened from the picker](screenshots/actions.png)
 
 ## Requirements
 
